@@ -1,0 +1,94 @@
+/* Fundo geral */
+.root {
+    -fx-background-color: linear-gradient(to bottom right, #1c1f2b, #2a2f45);
+    -fx-font-family: "Segoe UI", "Inter", sans-serif;
+}
+
+/* Card principal */
+.card {
+    -fx-background-color: rgba(255, 255, 255, 0.08);
+    -fx-background-radius: 24;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.35), 30, 0, 0, 10);
+}
+
+/* Header */
+.header {
+    -fx-border-color: rgba(255,255,255,0.1);
+    -fx-border-width: 0 0 1 0;
+}
+
+.title {
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.version {
+    -fx-text-fill: #bbbbbb;
+}
+
+/* Área central */
+.center-area {
+    -fx-background-color: transparent;
+}
+
+/* Drag & Drop */
+.drag-area {
+    -fx-border-color: #ff8c32;
+    -fx-border-width: 2;
+    -fx-border-style: dashed;
+    -fx-border-radius: 16;
+    -fx-background-radius: 16;
+}
+
+.drag-text {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #dddddd;
+}
+
+/* Arquivo */
+.file-item {
+    -fx-background-color: rgba(255,255,255,0.15);
+    -fx-background-radius: 20;
+    -fx-padding: 8 12 8 12;
+    -fx-alignment: CENTER;
+}
+
+.remove-btn {
+    -fx-background-color: transparent;
+    -fx-text-fill: #ff8c32;
+    -fx-font-weight: bold;
+}
+
+/* Painel direito */
+.right-panel {
+    -fx-background-color: rgba(255,255,255,0.08);
+    -fx-background-radius: 16;
+}
+
+.side-title {
+    -fx-font-size: 16px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+/* Botão Convert */
+.convert-btn {
+    -fx-background-color: #ff8c32;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 10 30 10 30;
+    -fx-background-radius: 30;
+}
+
+.convert-btn:hover {
+    -fx-background-color: #ffa14a;
+}
+
+/* Bottom */
+.bottom-area {
+    -fx-border-color: rgba(255,255,255,0.1);
+    -fx-border-width: 1 0 0 0;
+}

@@ -14,9 +14,13 @@ public class Main extends Application {
         try{
             Parent parent = FXMLLoader.load(getClass().getResource("/org/example/pdftransformer/gui/view.fxml"));
             Scene scene = new Scene(parent);
+            scene.getStylesheets().add(
+                    getClass().getResource("/style.css").toExternalForm()
+            );
             stage.setScene(scene);
             stage.setTitle("Pdf transformer");
             stage.show();
+
 
 
         }catch (IOException e){

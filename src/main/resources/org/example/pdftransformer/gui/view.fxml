@@ -1,6 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            prefHeight="400.0" prefWidth="600.0">
+
+<AnchorPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            prefWidth="1000"
+            prefHeight="650"
+            stylesheets="/style.css">
+
+    <!-- Card central -->
+    <BorderPane fx:id="card"
+                layoutX="100"
+                layoutY="75"
+                prefWidth="800"
+                prefHeight="500"
+                styleClass="card">
+
+        <!-- HEADER -->
+        <top>
+            <HBox spacing="10" alignment="CENTER_LEFT" styleClass="header">
+                <padding>
+                    <Insets top="20" right="20" bottom="20" left="20"/>
+                </padding>
+
+                <Label text="PDF CONVERTER" styleClass="title"/>
+                <Label text="v1.0" styleClass="version"/>
+            </HBox>
+        </top>
+
+        <!-- CENTER -->
+        <center>
+            <VBox spacing="15" styleClass="center-area">
+                <padding>
+                    <Insets top="20" right="20" bottom="20" left="20"/>
+                </padding>
+
+                <!-- Drag & Drop -->
+                <StackPane prefHeight="200" styleClass="drag-area">
+                    <Label text="DRAG and DROP&#10;PDF FILES HERE"
+                           textAlignment="CENTER"
+                           styleClass="drag-text"/>
+                </StackPane>
+
+                <!-- Lista de arquivos -->
+                <HBox spacing="10">
+                    <HBox spacing="8" styleClass="file-item">
+                        <Label text="📄 report.pdf"/>
+                        <Button text="✖" styleClass="remove-btn"/>
+                    </HBox>
+
+                    <HBox spacing="8" styleClass="file-item">
+                        <Label text="📄 report.pdf"/>
+                        <Button text="✖" styleClass="remove-btn"/>
+                    </HBox>
+                </HBox>
+            </VBox>
+        </center>
+
+        <!-- RIGHT -->
+        <right>
+            <VBox spacing="15" styleClass="right-panel">
+                <padding>
+                    <Insets top="20" right="20" bottom="20" left="20"/>
+                </padding>
+
+                <Label text="Convert To:" styleClass="side-title"/>
+
+                <RadioButton text="DOCX"/>
+                <RadioButton text="JPG"/>
+                <RadioButton text="PNG"/>
+            </VBox>
+        </right>
+
+        <!-- BOTTOM -->
+        <bottom>
+            <VBox spacing="12" alignment="CENTER" styleClass="bottom-area">
+                <padding>
+                    <Insets top="10" right="20" bottom="20" left="20"/>
+                </padding>
+
+                <Button text="CONVERT" styleClass="convert-btn"/>
+                <ProgressBar prefWidth="300"/>
+            </VBox>
+        </bottom>
+
+    </BorderPane>
+
 </AnchorPane>
